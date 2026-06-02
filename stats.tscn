@@ -1,0 +1,41 @@
+[gd_scene format=3 uid="uid://c7vdhss6msyve"]
+
+[ext_resource type="Script" uid="uid://cwwnquyep3gyf" path="res://stats.gd" id="1_r4or0"]
+[ext_resource type="Texture2D" uid="uid://cyme15v7kcoth" path="res://brackeys_platformer_assets/sprites/files (2)/red_pause.png" id="2_af2q3"]
+[ext_resource type="Script" uid="uid://kpk8qwluib4n" path="res://button_pause.gd" id="2_r4or0"]
+[ext_resource type="AudioStream" uid="uid://b8ydy8qutv8yy" path="res://brackeys_platformer_assets/sounds/tap.wav" id="3_af2q3"]
+[ext_resource type="FontFile" uid="uid://bd0035i6l43sh" path="res://brackeys_platformer_assets/fonts/PixelOperator8-Bold.ttf" id="4_agoph"]
+[ext_resource type="Script" uid="uid://dhakbbj54qkd4" path="res://timer.gd" id="6_af2q3"]
+
+[node name="CanvasLayer" type="CanvasLayer" unique_id=281233924]
+script = ExtResource("1_r4or0")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1074743607]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="pause" type="Button" parent="VBoxContainer" unique_id=304638638]
+layout_mode = 2
+icon = ExtResource("2_af2q3")
+flat = true
+script = ExtResource("2_r4or0")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="VBoxContainer/pause" unique_id=1432712302]
+position = Vector2(-0.5, 1)
+stream = ExtResource("3_af2q3")
+volume_db = 9.142
+
+[node name="timer" type="Label" parent="VBoxContainer" unique_id=337284457]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.15686275, 0.78431374, 0.2509804, 1)
+theme_override_fonts/font = ExtResource("4_agoph")
+theme_override_font_sizes/font_size = 24
+text = "Timer : 0 : 00"
+script = ExtResource("6_af2q3")
+
+[node name="Deaths" type="Label" parent="VBoxContainer" unique_id=1470469794]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.77254903, 0.05490196, 0.0627451, 1)
+theme_override_fonts/font = ExtResource("4_agoph")
+theme_override_font_sizes/font_size = 20
+text = "Deaths : 0"

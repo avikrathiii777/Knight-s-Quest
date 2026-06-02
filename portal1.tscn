@@ -1,0 +1,84 @@
+[gd_scene format=3 uid="uid://dtrote50w6v8i"]
+
+[ext_resource type="Texture2D" uid="uid://dx5g501j3k1tm" path="res://brackeys_platformer_assets/sprites/Dimensional_Portal.png" id="1_0r486"]
+[ext_resource type="Script" uid="uid://bvkkf68cmt0yq" path="res://portal1.gd" id="1_grrij"]
+[ext_resource type="AudioStream" uid="uid://u6bx5aosh8lq" path="res://brackeys_platformer_assets/sounds/power_up.wav" id="3_6r214"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ef3v5"]
+atlas = ExtResource("1_0r486")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_grrij"]
+atlas = ExtResource("1_0r486")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6r214"]
+atlas = ExtResource("1_0r486")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2pgh4"]
+atlas = ExtResource("1_0r486")
+region = Rect2(0, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wtc1a"]
+atlas = ExtResource("1_0r486")
+region = Rect2(32, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_w8rct"]
+atlas = ExtResource("1_0r486")
+region = Rect2(64, 32, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_r8kna"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ef3v5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_grrij")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6r214")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2pgh4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wtc1a")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_w8rct")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_0r486"]
+radius = 7.0
+
+[node name="Portal" type="Area2D" unique_id=924286091]
+collision_mask = 2
+monitoring = false
+monitorable = false
+audio_bus_name = &"SFX"
+script = ExtResource("1_grrij")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1829093708]
+position = Vector2(2, -1.5)
+scale = Vector2(1.125, 1.09375)
+sprite_frames = SubResource("SpriteFrames_r8kna")
+autoplay = "default"
+flip_h = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1124701536]
+position = Vector2(1, 0)
+shape = SubResource("CircleShape2D_0r486")
+
+[node name="Teleporting" type="AudioStreamPlayer2D" parent="." unique_id=135716881]
+stream = ExtResource("3_6r214")
+volume_db = 1.199
+bus = &"SFX"
+area_mask = 2
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

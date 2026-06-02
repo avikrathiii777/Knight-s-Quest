@@ -1,56 +1,152 @@
-# Knight’s Quest
+<a id="readme-top"></a>
 
-Welcome to **Knight’s Quest**, an immersive and challenging 2D platformer built entirely with the Godot Engine 4. Experience responsive mechanics, tight platforming, and strategic progression as you navigate through increasingly hazardous zones. Complete the quest in your best time and challenge your family!
+<!-- SHIELDS -->
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+[![MIT License][license-shield]][license-url]
 
----
+<!-- HEADER -->
+<br />
+<div align="center">
+	<a href="https://github.com/BudzioT/Godot_Super-Wakatime">
+		<img src="https://cloud-bo1ln2br1-hack-club-bot.vercel.app/0godotwaka22.png"  alt="Godot Wakatime"/>
+	</a>
+	<h3 align="center"> Godot Super Wakatime </h3>
+	<p align="center">
+		Tool to measure time spent in loved by many people game engine - Godot
+		<br />
+		Officially approved to use in events created by Hack Club
+		<br />
+		<br />
+		<a href="https://godotengine.org/asset-library/asset/3484">Get from Asset Lib</a>
+		·
+		<a href="https://youtu.be/rqAc-YdVXyM">View Demo</a>
+		·
+		<a href="https://github.com/BudzioT/Godot_Super-Wakatime/issues/new">Report Bug / Request Feature</a>
+	</p>
+</div>
 
-## 🎮 Game Systems & Mechanics
+<!-- CONTENTS -->
+<details>
+	<summary>Table of Contents</summary>
+	<ol>
+		<li>
+			<a href="#about">About The Project</a>
+			<ul>
+				<li><a href="#built-with">Built Using</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="#getting-started">Getting Started</a>
+			<ul>
+				<li><a href="#installation">Installation</a></li>
+			</ul>
+		</li>
+		<li><a href="#usage">Usage</a></li>
+		<li><a href="#license">License</a></li>
+	</ol>
+</details>
 
-### ⏱️ Global Speedrun Timer
-The game features a persistent, global tracking clock that ticks upward in **whole seconds only**. 
-* The timer starts immediately when you click **Start** on the Home Menu.
-* It pauses automatically during level shifts or when hitting hazards, ensuring your tracking metrics are frame-accurate.
-* Your final time is locked in the moment you step into the endgame portal.
 
-### 💀 Persistent Death Counter
-Every mistake is logged. The game features an accurate, anti-multi-hit tracking system that registers exactly **one death** per impact. 
-* Your total death count is displayed natively on the in-game HUD overlay (`Stats`).
-* When you are on the **Home Menu**, the `Deaths` counter automatically hides itself to keep your title screen clean and immersive.
+<!-- ABOUT -->
+## About The Project
+<br />
 
-### 💾 Local Record Save System
-The game features an automated, local high-score system that saves your personal records directly to your computer's disk (`user://best_score.cfg`). Your stats remain saved even if you close the game!
-* **Tie-Breaker Logic:** A new record is registered if your current run time is faster than your previous best. If your time matches your best exactly, the system checks your deaths and awards a new record if you completed the run with fewer deaths.
-* Your historical record is beautifully formatted and displayed directly on the Home Menu: `Best Time: Xs (Deaths: Y)`.
+[![Product Screenshot][product-screenshot]](https://waka.hackclub.com)
 
----
+This tool can successfully measure time spent building your games or apps in Godot.
+<br />
+Here's why:
+* It differentiates between switching a scene and script
+* It counts key presses as coding and mouse clicks as building scene
+* Changing scene structure results in a heartbeat sent
+* It correctly detects OS, machine name, language, editor, files
+* It can detect your cursor line and position
+* Time is split between: Building, Coding, Testing
+* In the future it will also detect testing your projects
 
-## 🗺️ Levels Overview
+It works on both Linux and Windows, it wasn't tested on macOS yet
+<br />
+You can also see your time spent in the editor itself:
+[![Time in editor][time-screenshot]]
+
+<p align="right">(<a href="#readme-top">top</a>)</p>
 
 
-| Level Name | Description |
-| :--- | :--- |
-| **Home Menu** | The gateway to the game. Features dynamic, animated button states (hover, click, and release scaling) and displays your persistent local high score. The in-game death counter is hidden here. |
-| **Tutorial** | The foundational training ground. Learn the basic movement layout, pacing, and jumping physics while getting comfortable with the controls before embarking on the real quest. |
-| **Zootopia 2** | A unique world of shifting environments where you experience different seasons. The catch? You must complete this journey twice to overcome the changing seasonal elements and make it through. |
-| **Trap World** | A brutal test of patience and precision. A literal minefield of hidden triggers where a single wrong step can instantly send you flying back and forth across the screen. |
-| **Maze Madness** | The ultimate test of orientation and spatial awareness. Navigate through a confusing, twisting labyrinth under pressure to locate the hidden exit gate. |
+### Built Using
+I used the Ouch! CLI tool for decompression of files <br />
+This project was built using one simple, yet powerful language.<br />
+It required a lot of workarounds, but it was a pleasure to use it
+* [![GDScript][Godot]][Godot-url]
+* [![Ouch!][Ouch-shield]][Ouch-url]
 
----
+<p align="right">(<a href="#readme-top">top</a>)</p>
 
-## 📑 License
+<!-- GETTING STARTED -->
+## Getting Started
+How to install and use this software? It's easy!
 
-This project is open-source and **free to use** for personal, educational, or commercial modification. 
-* You are free to modify the source code, levels, and mechanics.
-* **Attribution / Credit is highly appreciated** but not strictly mandatory. 
+### Installation
+You can either download it from the [Godot Asset Library](https://godotengine.org/asset-library/asset/3484).
+<br />Or you can manually install it, here's how to do it!
+1. Clone the repository
+	```sh
+	git clone https://github.com/BudzioT/Godot_Super-Wakatime.git
+	```
+2. Go into your project
+3. Insert the entire `./addons` folder into your project `res://` directory
 
----
+<p align="right">(<a href="#readme-top">top</a>)</p>
 
-## 🤝 Credits & Attributions
+<!-- USAGE -->
+## Usage
+Don't know how to use this plugin? Here are the steps:
+1. Turn on the plugin in your plugins. In your `Project -> Project Settings -> Plugins -> `Click the `Enable` checkbox near this plugin
+2. If prompted for API key, provide it from Wakatime website
+3. if there is an issue with it, please manually create `~/.wakatime.cfg` file with these contents:
+    ```sh
+    [settings]
+    api_key=xxxx
+    ```
+    Where xxxx is your api key
+<br /><br />
+If you are coming from Hack Club use this:
+    ```sh
+    [settings]
+    api_url = https://hackatime.hackclub.com/api/hackatime/v1
+    api_key=xxxx
+    ```
+4. Wakatime CLI should have been installed automatically along with Ouch! Decompression library
+5. Work on your project! You should see your results on either Wakatime or Hackatime!
+6. You can also see your time at the bottom panel
 
-Special thanks to the following creators and resources that helped bring this project to life:
+<p align="right">(<a href="#readme-top">top</a>)</p>
 
-* **Brackeys** – For their incredible, industry-standard 2D platformer tilesets, character sprites, and foundational Godot tutorial videos that inspired and structured this project's core movement architecture. 
-* **Godot Engine Community** – For providing documentation and community templates regarding asynchronous web plugins, sound deferred execution states, and strict boolean variable type compliance.
+<!-- LICENSE -->
+## License
 
-***
-*Developed with passion in Godot 4.6+*
+Distributed under the MIT License. See `LICENSE` for more information.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+<!-- URLS -->
+[contributors-shield]: https://img.shields.io/github/contributors/budziot/Godot_Super-Wakatime?style=for-the-badge
+[contributors-url]: https://github.com/BudzioT/Godot_Super-Wakatime/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/budziot/Godot_Super-Wakatime?style=for-the-badge
+[forks-url]: https://github.com/BudzioT/Godot_Super-Wakatime/forks
+[stars-shield]: https://img.shields.io/github/stars/budziot/Godot_Super-Wakatime?style=for-the-badge
+[stars-url]: https://github.com/BudzioT/Godot_Super-Wakatime/stargazers
+[issues-shield]: https://img.shields.io/github/issues/budziot/Godot_Super-Wakatime?style=for-the-badge
+[issues-url]: https://github.com/BudzioT/Godot_Super-Wakatime/issues
+[license-shield]: https://img.shields.io/github/license/budziot/Godot_Super-Wakatime?style=for-the-badge
+[license-url]: https://github.com/BudzioT/Godot_Super-Wakatime/blob/master/addons/godot_super-wakatime/LICENSE
+[product-screenshot]: https://cloud-j4wibbzz7-hack-club-bot.vercel.app/0image.png
+[product-logo]: https://cloud-j4wibbzz7-hack-club-bot.vercel.app/2godotwaka2.png
+[Godot]: https://img.shields.io/badge/Godot%20Engine-478CBF?logo=godotengine&logoColor=fff&style=flat
+[Godot-url]: https://godotengine.org/
+[Ouch-shield]: https://img.shields.io/badge/Ouch!-tool-blue?label=Ouch!
+[Ouch-url]: https://github.com/ouch-org/ouch
+[time-screenshot]: https://cloud-l88kldf50-hack-club-bot.vercel.app/0image.png

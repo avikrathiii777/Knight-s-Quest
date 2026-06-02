@@ -1,0 +1,71 @@
+[gd_scene format=3 uid="uid://djp4pthioe8aw"]
+
+[ext_resource type="Script" uid="uid://ppn825d8mcxt" path="res://enemy_green.gd" id="1_esofi"]
+[ext_resource type="Texture2D" uid="uid://dtva2aen8d6ml" path="res://brackeys_platformer_assets/sprites/slime_green.png" id="1_u5mpm"]
+[ext_resource type="PackedScene" uid="uid://d2b6mwhbiox4c" path="res://kill_zone.tscn" id="2_esofi"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_eg1wy"]
+atlas = ExtResource("1_u5mpm")
+region = Rect2(0, 24, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cmooj"]
+atlas = ExtResource("1_u5mpm")
+region = Rect2(24, 24, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bx5o2"]
+atlas = ExtResource("1_u5mpm")
+region = Rect2(48, 24, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_btqar"]
+atlas = ExtResource("1_u5mpm")
+region = Rect2(72, 24, 24, 24)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_gaa4g"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_eg1wy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cmooj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bx5o2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_btqar")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_glvuu"]
+size = Vector2(9, 11.875)
+
+[node name="Enemy_green" type="Node2D" unique_id=1230548703]
+script = ExtResource("1_esofi")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=2045155713]
+sprite_frames = SubResource("SpriteFrames_gaa4g")
+autoplay = "default"
+frame_progress = 0.7233641
+flip_h = true
+
+[node name="RayCast2D" type="RayCast2D" parent="." unique_id=807568662]
+position = Vector2(0, 6)
+rotation = -1.5707964
+target_position = Vector2(-4.7683716e-07, 11)
+
+[node name="RayCast2D2" type="RayCast2D" parent="." unique_id=784914949]
+position = Vector2(0, 6)
+rotation = -1.5707964
+target_position = Vector2(4.7683716e-07, -11)
+hit_from_inside = true
+collide_with_areas = true
+
+[node name="KillZone" parent="." unique_id=1743357904 instance=ExtResource("2_esofi")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="KillZone" unique_id=2134601078]
+position = Vector2(0, 4.9375)
+shape = SubResource("RectangleShape2D_glvuu")
