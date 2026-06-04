@@ -25,10 +25,10 @@ The game features an automated, local high-score system that saves your personal
 
 | Level Name | Description |
 | :--- | :--- |
-| **Home Menu** | The gateway to the game. Features dynamic, animated button states (hover, click, and release scaling) and displays your persistent local high score. The in-game death counter is hidden here. |
-| **Tutorial** | The foundational training ground. Learn the basic movement layout, pacing, and jumping physics while getting comfortable with the controls before embarking on the real quest. |
-| **Zootopia 2** | A unique world of shifting environments where you experience different seasons. The catch? You must complete this journey twice to overcome the changing seasonal elements and make it through. |
-| **Trap World** | A brutal test of patience and precision. A literal minefield of hidden triggers where a single wrong step can instantly send you flying back and forth across the screen. |
+| **Home Menu** | The gateway to the game. Features dynamic, animated button states (hover, click, and release scaling) and displays your persistent local high score. The in-game death counter is hidden here along with the timer. |
+| **Tutorial** | The foundational training ground. Learn the basic movement layout, pacing, and jumping physics while getting comfortable with the controls before embarking on the real quest. It is really easy and I think my best time for this level is 35. |
+| **Zootopia 2** | A unique world of shifting environments where you experience different seasons. The catch? You must complete this journey twice to overcome the changing seasonal elements and make it through. And boy, is this hard. The gates in between are made up of question and exclamations made by a snake grandmother.(Watch Zootopia 2) |
+| **Trap World** | A brutal test of patience and precision. A literal minefield of hidden triggers where a single wrong step can instantly send you flying back to the start. Like you won't even expect the traps. |
 | **Maze Madness** | The ultimate test of orientation and spatial awareness. Navigate through a confusing, twisting labyrinth under pressure to locate the hidden exit gate. |
 
 ---
@@ -37,7 +37,7 @@ The game features an automated, local high-score system that saves your personal
 
 This project is open-source and **free to use** for personal, educational, or commercial modification. 
 * You are free to modify the source code, levels, and mechanics.
-* **Attribution / Credit is highly appreciated** but not strictly mandatory. 
+* **Attribution / Credit is highly appreciated** but not mandatory. 
 
 ---
 
