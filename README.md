@@ -1,26 +1,22 @@
 # Knight’s Quest
 
-Welcome to **Knight’s Quest**, an immersive and challenging 2D platformer built entirely with the Godot Engine 4. Experience responsive mechanics, tight platforming, and strategic progression as you navigate through increasingly hazardous zones. Complete the quest in your best time and challenge your family!
+**Knight's Quest** is a 2D speedrunner, platformer game that I made, of course. It is a challenging ,trust me on that, ragebaiting and very hard (for me at least) game. I got the idea from [yessa's Specter](https://shaaarkai.itch.io/specter). So thanks to her/him (I really don't know). While I got help from brackeys youtube channel (officially mentioned in License and credit.
 
 ---
 
 ## 🎮 Game Systems & Mechanics
 
-### ⏱️ Global Speedrun Timer
-The game features a persistent, global tracking clock that ticks upward in **whole seconds only**. 
-* The timer starts immediately when you click **Start** on the Home Menu.
-* It pauses automatically during level shifts or when hitting hazards, ensuring your tracking metrics are frame-accurate.
-* Your final time is locked in the moment you step into the endgame portal.
+### ⏱️ Speedrun Timer
+There is a timer, though I can't explain to myself why I kept it green, that starts from when you open the first level not your first touch. It ends when you complete the game after level 4. ALSO the most important part, you must collect all 40 coins on each level to enable the portal. The timer is also stopped and hidden when you pause the game or are at the home page. But if you play from the home page the whole thing is reset.
 
 ### 💀 Persistent Death Counter
-Every mistake is logged. The game features an accurate, anti-multi-hit tracking system that registers exactly **one death** per impact. 
-* Your total death count is displayed natively on the in-game HUD overlay (`Stats`).
-* When you are on the **Home Menu**, the `Deaths` counter automatically hides itself to keep your title screen clean and immersive.
+Every mistake is logged into the game.
+* Your total death count is displayed natively using a CanvasLayer.
+* When you are on the **Home Menu**, the `Deaths` counter automatically hides itself to keep your title screen clean and immersive (used this word for the first time).
 
 ### 💾 Local Record Save System
-The game features an automated, local high-score system that saves your personal records directly to your computer's disk (`user://best_score.cfg`). Your stats remain saved even if you close the game!
-* **Tie-Breaker Logic:** A new record is registered if your current run time is faster than your previous best. If your time matches your best exactly, the system checks your deaths and awards a new record if you completed the run with fewer deaths.
-* Your historical record is beautifully formatted and displayed directly on the Home Menu: `Best Time: Xs (Deaths: Y)`.
+The game features an automated, local high-score system that saves your personal records directly to your computer's disk using configFile. Your stats remain saved even if you close the game!
+* **Tie-Breaker Logic:** A new record is registered if your current run time is faster than your previous best. If your time matches your best exactly, the system checks your deaths and awards a new record if you completed the run with fewer deaths. So time matters more than your life , I guess.
 
 ---
 
