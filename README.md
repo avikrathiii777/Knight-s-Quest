@@ -1,6 +1,6 @@
 # Knight’s Quest
 
-**Knight's Quest** is a 2D speedrunner, platformer game that I made, of course. It is a challenging ,trust me on that, ragebaiting and very hard (for me at least) game. I got the idea from [yessa's Specter](https://shaaarkai.itch.io/specter). So thanks to her/him (I really don't know). While I got help from brackeys youtube channel (officially mentioned in License and credit.
+**Knight's Quest** is a 2D speedrunner, platformer game that I made, of course. It is a challenging ,trust me on that, ragebaiting and very hard (for me at least) game. I got the idea from [yessa's Specter](https://shaaarkai.itch.io/specter). So thanks to her/him (I really don't know). While I got help from brackeys youtube channel (officially mentioned in License and credit).
 
 ---
 
@@ -35,18 +35,19 @@ The game features an automated, local high-score system that saves your personal
 
 ## 📑 License
 
-This project is open-source and **free to use** for personal, educational, or commercial modification. 
-* You are free to modify the source code, levels, and mechanics.
-* **Attribution / Credit is highly appreciated** but not mandatory. 
+This project is open-source and **free to use** for personal, educational, or commercial modification (are there any others?). 
+* You are free to modify the source code, levels, and mechanics (just pls keep the timer green)(absolutely no reason though).
+* **Attribution / Credit is highly appreciated** but not mandatory.(and i mean very highly appreciated) 
 
 ---
 
 ## 🤝 Credits & Attributions
 
-Special thanks to the following creators and resources that helped bring this project to life:
+Special thanks to the following creators and resources that helped bring this project to life (and deaths):
 
-* **Brackeys** – For their incredible, industry-standard 2D platformer tilesets, character sprites, and foundational Godot tutorial videos that inspired and structured this project's core movement architecture. 
-* **Godot Engine Community** – For providing documentation and community templates regarding asynchronous web plugins, sound deferred execution states, and strict boolean variable type compliance.
+* **Brackeys** – For their incredible, industry-standard(more-like game standard) 2D platformer tilesets, character sprites, and foundational Godot tutorial videos.(those were really very nice)
+* **Godot Engine Community** – For providing documentation and community templates regarding asynchronous web plugins, sound deferred execution states, and strict boolean variable type compliance.(though not very thankful because of the number of errors i got)
+* **Yessa** - For inspiring me by their/them/him/her 's project [specter](https://shaaarkai.itch.io/specter)
 
 ***
-*Developed with passion in Godot 4.6+*
+*Developed with passion and error in Godot 4.6+*
