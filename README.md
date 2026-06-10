@@ -20,6 +20,16 @@ The game has an added feature of saving your records by storing them into using 
 
 ---
 
+## 🕹️ Controls
+
+Pick whichever system feels right for you:
+
+* **Move Left:** `A` or `Left Arrow`
+* **Move Right:** `D` or `Right Arrow`
+* **Jump:** `Space`, `W`, or `Up Arrow`
+  
+---
+
 ## 🗺️ Levels Overview
 
 
