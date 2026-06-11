@@ -24,10 +24,10 @@ Pick whichever system feels right for you:
 ## Levels
 
 There are four level in the game-
-**Tutorial** - This is the easiest level and if you can't complete it you may as well as just give up. My personal best time is 35 for this level. It teaches you the movement patterns and the physics and your jump limitations.
-**Zootopia 2** - This level consists of three distinct seasons (not that they matter) and all you have to do is cross it. OH but wait. There is a catch. You must cross the level twice to complete it. This ,for me, is the hardest level. The gap between these seasons was made by a snake grandmother (watch Zootopia 2).
-**Booby Traps** - This level is filled with different types of traps in places you won't expect them. The first time you play this, you are gonna get ragebaited. There are specially placed "fake tiles" that can't support your weight.
-**Maze Madness** - This is the last and final level. The exit is placed in an verticl maze so very hard to navigate and filled with fake tiles. You must collect every coin to complete begin your search for the exit. Complete it fast to break your record.
+**Tutorial** - This is the easiest level and if you can't complete it you may as well as just give up. My personal best time is 35 for this level. It teaches you the movement patterns and the physics and your jump limitations.\
+**Zootopia 2** - This level consists of three distinct seasons (not that they matter) and all you have to do is cross it. OH but wait. There is a catch. You must cross the level twice to complete it. This ,for me, is the hardest level. The gap between these seasons was made by a snake grandmother (watch Zootopia 2).\
+**Booby Traps** - This level is filled with different types of traps in places you won't expect them. The first time you play this, you are gonna get ragebaited. There are specially placed "fake tiles" that can't support your weight.\
+**Maze Madness** - This is the last and final level. The exit is placed in an verticl maze so very hard to navigate and filled with fake tiles. You must collect every coin to complete begin your search for the exit. Complete it fast to break your record.\
 
 ---
 
