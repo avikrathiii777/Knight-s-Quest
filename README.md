@@ -3,6 +3,8 @@
 **Knight's Quest** is a 2D speedrunner, platformer game that I made, of course. It is a challenging ,trust me on that, ragebaiting and very hard (for me at least) game. I got the idea from [yessa's Specter](https://shaaarkai.itch.io/specter). So thanks to her/him (I really don't know). While I got help from brackeys youtube channel (officially mentioned later on).
 
 ---
+<img width="1920" height="916" alt="image" src="https://github.com/user-attachments/assets/5c0a261b-d953-463f-9555-4ea8476c4166" />
+<img width="1920" height="907" alt="image" src="https://github.com/user-attachments/assets/98304c20-cbb3-4941-b548-fff4a9761d24" />
 
 ## About the Game
 
