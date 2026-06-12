@@ -10,7 +10,7 @@ First of all there is a timer that starts immediately after you start the game f
 
 ---
 
-## 🕹️ Controls
+## Controls
 
 Pick whichever system feels right for you:
 
@@ -48,3 +48,5 @@ Special thanks to the following that helped bring this project to life (and deat
 
 ***
 *Developed with passion and error in Godot 4.6+*
+
+
